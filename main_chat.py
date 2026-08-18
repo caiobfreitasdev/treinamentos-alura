@@ -3,10 +3,10 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 
 load_dotenv()
-api_key = os.getenv("API_KEY_OPEN")
+api_key = os.getenv("api_key_open_ai")
 
 modelo = ChatOpenAI(
-    model="pt-3.5-turbo",
+    model="gpt-3.5-turbo",
     temperature=0.5,
     api_key=api_key
 )
