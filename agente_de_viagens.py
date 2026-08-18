@@ -62,5 +62,5 @@ resposta = cadeia.invoke(
 )
 print(resposta)
 
-# por causa do STR -> String, não preciso usar o .content, pois já estamos informando que o formato vai ser em string
+#por causa do STR -> String, não preciso usar o .content, pois já estamos informando que o formato vai ser em string
 #invoke isola a construção, e orquestra as construções
