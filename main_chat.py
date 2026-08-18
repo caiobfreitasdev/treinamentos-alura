@@ -1,7 +1,6 @@
 import os
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
-from openai import Client
 
 load_dotenv()
 api_key = os.getenv("API_KEY_OPEN")
@@ -16,7 +15,7 @@ lista_de_perguntas = [
     "Sugira uma cidade para visitar dado o meu interesse por praias e cultura.",
     "Sugira restaurantes populares",
     "Sugira a melhor época do ano para visitar a cidade sugerida"
-]
+    ]
 
 for pergunta in lista_de_perguntas:
     resposta = modelo.invoke(pergunta)
